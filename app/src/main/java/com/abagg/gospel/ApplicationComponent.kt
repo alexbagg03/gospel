@@ -1,7 +1,7 @@
-package com.abagg.gospel.shared
+package com.abagg.gospel
 
 import android.content.Context
-import com.abagg.gospel.main.MainActivitySubcomponent
+import com.abagg.gospel.welcome.WelcomeSubcomponent
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -15,6 +15,6 @@ interface ApplicationComponent {
         fun create(@BindsInstance applicationContext: Context): ApplicationComponent
     }
 
-    val mainActivitySubcomponentFactory: MainActivitySubcomponent.Factory
+    val welcomeSubcomponentFactory: WelcomeSubcomponent.Factory
 
 }

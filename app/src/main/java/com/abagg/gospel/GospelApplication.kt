@@ -1,8 +1,6 @@
 package com.abagg.gospel
 
 import android.app.Application
-import com.abagg.gospel.shared.ApplicationComponent
-import com.abagg.gospel.shared.DaggerApplicationComponent
 
 class GospelApplication: Application() {
 
