@@ -1,9 +1,15 @@
 package com.abagg.gospel
 
+import dagger.BindsInstance
 import dagger.Subcomponent
-import javax.inject.Singleton
 
-
+@ReusableScope
 @Subcomponent
 interface MainActivitySubcomponent {
+
+    @Subcomponent.Factory
+    interface Factory {
+        fun create(@BindsInstance mainActivityModule: MainActivityModule): MainActivitySubcomponent
+    }
+
 }

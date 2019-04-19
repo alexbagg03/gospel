@@ -9,12 +9,11 @@ import javax.inject.Singleton
 @Component
 interface ApplicationComponent {
 
-    @Component.Builder
-    interface Builder {
-        @BindsInstance
-        fun applicationContext(applicationContext: Context): Builder
-
-        fun build(): ApplicationComponent
+    @Component.Factory
+    interface Factory {
+        fun create(@BindsInstance applicationContext: Context): ApplicationComponent
     }
+
+    val mainActivitySubcomponentFactory: MainActivitySubcomponent.Factory
 
 }
