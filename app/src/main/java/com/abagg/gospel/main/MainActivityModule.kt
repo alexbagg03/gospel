@@ -1,4 +1,4 @@
-package com.abagg.gospel
+package com.abagg.gospel.main
 
 import dagger.Module
 

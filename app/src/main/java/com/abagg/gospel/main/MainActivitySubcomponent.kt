@@ -1,5 +1,6 @@
-package com.abagg.gospel
+package com.abagg.gospel.main
 
+import com.abagg.gospel.shared.ReusableScope
 import dagger.BindsInstance
 import dagger.Subcomponent
 

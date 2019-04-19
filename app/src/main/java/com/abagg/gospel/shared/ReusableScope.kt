@@ -1,4 +1,4 @@
-package com.abagg.gospel
+package com.abagg.gospel.shared
 
 import javax.inject.Scope
 
