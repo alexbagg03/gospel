@@ -1,7 +1,7 @@
 package com.abagg.gospel
 
 import android.content.Context
-import com.abagg.gospel.welcome.WelcomeSubcomponent
+import com.abagg.gospel.home.HomeSubcomponent
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
@@ -15,6 +15,6 @@ interface ApplicationComponent {
         fun create(@BindsInstance applicationContext: Context): ApplicationComponent
     }
 
-    val welcomeSubcomponentFactory: WelcomeSubcomponent.Factory
+    val homeSubcomponentFactory: HomeSubcomponent.Factory
 
 }

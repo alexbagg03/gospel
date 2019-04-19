@@ -1,4 +1,4 @@
-package com.abagg.gospel.welcome
+package com.abagg.gospel.home
 
 
 import android.content.Context
@@ -11,19 +11,19 @@ import com.abagg.gospel.GospelApplication
 
 import com.abagg.gospel.R
 
-class WelcomeFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     override fun onAttach(context: Context?) {
         super.onAttach(context)
 
         GospelApplication
                 .component
-                .welcomeSubcomponentFactory
-                .create(WelcomeModule())
+                .homeSubcomponentFactory
+                .create(HomeModule())
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_welcome, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
 }
