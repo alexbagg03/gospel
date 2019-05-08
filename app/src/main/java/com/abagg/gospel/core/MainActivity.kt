@@ -1,7 +1,8 @@
-package com.abagg.gospel
+package com.abagg.gospel.core
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.abagg.gospel.R
 
 class MainActivity : AppCompatActivity() {
 

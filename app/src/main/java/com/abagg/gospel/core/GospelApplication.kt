@@ -1,4 +1,4 @@
-package com.abagg.gospel
+package com.abagg.gospel.core
 
 import android.app.Application
 
@@ -7,9 +7,8 @@ class GospelApplication: Application() {
     companion object {
         private var applicationInstance: GospelApplication? = null
 
-        val component: ApplicationComponent by lazy {
-            DaggerApplicationComponent
-                    .factory()
+        val component: CoreComponent by lazy {
+            DaggerCoreComponent.factory()
                     .create(getApplicationInstance())
         }
 
